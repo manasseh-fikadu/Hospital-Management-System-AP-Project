@@ -57,6 +57,10 @@ public class Appointment {
         JButton button = new JButton("Submit");
         button.setBounds(400,420,100,30);
         frame.add(button);
+        button.addActionListener(l -> {
+            frame.dispose();
+            new Doctor();
+        });
         button.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
                 String name = text1.getText();
