@@ -62,8 +62,8 @@ public class Appointment {
                 String name = text1.getText();
                 String age = text2.getText();
                 String address = text3.getText();
-                String phone = text4.getText();
-                String email = text5.getText();
+                // String phone = text4.getText();
+                // String email = text5.getText();
                 try{
                     Class.forName("com.mysql.jdbc.Driver");
                     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
