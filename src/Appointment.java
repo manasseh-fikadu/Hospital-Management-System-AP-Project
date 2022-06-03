@@ -59,7 +59,7 @@ public class Appointment {
         frame.add(button);
         button.addActionListener(l -> {
             frame.dispose();
-            new Doctor();
+            new Patient();
         });
         button.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){

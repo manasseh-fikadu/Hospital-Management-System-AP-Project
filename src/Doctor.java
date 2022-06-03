@@ -20,11 +20,11 @@ public class Doctor {
         label.setBounds(300,50,500,30);
         frame.add(label);
         JButton button = new JButton("List of Patients");
-        button.setBounds(400,120,200,30);
+        button.setBounds(400,100,200,30);
         frame.add(button);
         button.addActionListener(l -> {
             try{
-                Class.forName("com.mysql.jdbc.Driver");
+                // Class.forName("com.mysql.jdbc.Driver");
                 // Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
                 // Statement stmt = con.createStatement();
                 // ResultSet rs = stmt.executeQuery("select * from patient");
@@ -70,11 +70,11 @@ public class Doctor {
         });
 
         JButton button1 = new JButton("Examination");
-        button1.setBounds(400,200,200,30);
+        button1.setBounds(400,150,200,30);
         frame.add(button1);
         button1.addActionListener(l -> {
             try{
-                Class.forName("com.mysql.jdbc.Driver");
+                // Class.forName("com.mysql.jdbc.Driver");
                 // Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
                 // Statement stmt = con.createStatement();
                 // ResultSet rs = stmt.executeQuery("select * from patient");
@@ -110,7 +110,7 @@ public class Doctor {
                 frame1.add(button2);
                 button2.addActionListener(l1 -> {
                     try{
-                        Class.forName("com.mysql.jdbc.Driver");
+                        // Class.forName("com.mysql.jdbc.Driver");
                         // Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
                         // Statement stmt1 = con1.createStatement();
                         // ResultSet rs1 = stmt1.executeQuery("select * from patient");
@@ -145,6 +145,47 @@ public class Doctor {
                         System.out.println(e);
                     }
                 });
+                JButton button3 = new JButton("Recommend Medicine");
+                button3.setBounds(400,250,200,30);
+                frame.add(button3);
+                button3.addActionListener(l2 -> {
+                    try{
+                        // Class.forName("com.mysql.jdbc.Driver");
+                        // Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
+                        // Statement stmt = con.createStatement();
+                        // ResultSet rs = stmt.executeQuery("select * from patient");
+                        JFrame frame12 = new JFrame("Recommend Medicine");
+                        frame12.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                        frame12.setSize(1000,600);
+                        frame12.setLocationRelativeTo(null);
+                        frame12.setResizable(false);
+                        frame12.setLayout(null);
+                        frame12.setVisible(true);
+                        JLabel label12 = new JLabel("Recommend Medicine");
+                        label12.setFont(new Font("Serif", Font.BOLD, 24));
+                        label12.setBounds(300,50,500,30);
+                        frame12.add(label1);
+                        JLabel label22 = new JLabel("Patient ID");
+                        label22.setFont(new Font("Serif", Font.PLAIN, 18));
+                        label22.setBounds(250,120,100,30);
+                        frame12.add(label2);
+                        JLabel label32 = new JLabel("Patient Name");
+                        label32.setFont(new Font("Serif", Font.PLAIN, 18));
+                        label32.setBounds(250,180,100,30);
+                        frame12.add(label3);
+                        JLabel label42 = new JLabel("Patient Age");
+                        label42.setFont(new Font("Serif", Font.PLAIN, 18));
+                        label42.setBounds(250,240,100,30);
+                        frame12.add(label4);
+                        JLabel label52 = new JLabel("Patient Address");
+                        label52.setFont(new Font("Serif", Font.PLAIN, 18));
+                        label52.setBounds(250,300,100,30);
+                        frame12.add(label5);
+                    }
+                    catch(Exception e){
+                        System.out.println(e);
+                    }
+                });
             }
             catch(Exception e){
                 System.out.println(e);
@@ -152,11 +193,11 @@ public class Doctor {
         });
 
         JButton button2 = new JButton("Technician Report");
-        button2.setBounds(400,250,200,30);
+        button2.setBounds(400,200,200,30);
         frame.add(button2);
         button2.addActionListener(l -> {
             try{
-                Class.forName("com.mysql.jdbc.Driver");
+                // Class.forName("com.mysql.jdbc.Driver");
                 // Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
                 // Statement stmt = con.createStatement();
                 // ResultSet rs = stmt.executeQuery("select * from patient");
@@ -193,12 +234,12 @@ public class Doctor {
             }
         });
 
-        JButton button3 = new JButton("Recommend Medicine");
-        button3.setBounds(400,300,200,30);
+        JButton button3 = new JButton("Fill in vailability");
+        button3.setBounds(400,250,200,30);
         frame.add(button3);
         button3.addActionListener(l -> {
             try{
-                Class.forName("com.mysql.jdbc.Driver");
+                // Class.forName("com.mysql.jdbc.Driver");
                 // Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
                 // Statement stmt = con.createStatement();
                 // ResultSet rs = stmt.executeQuery("select * from patient");

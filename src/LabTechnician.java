@@ -24,7 +24,7 @@ public class LabTechnician {
         frame.add(button);
         button.addActionListener(l -> {
             try{
-                Class.forName("com.mysql.jdbc.Driver");
+                // Class.forName("com.mysql.jdbc.Driver");
                 // Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
                 // Statement stmt = con.createStatement();
                 // ResultSet rs = stmt.executeQuery("select * from doctor");
@@ -65,12 +65,12 @@ public class LabTechnician {
             }
         });
 
-        JButton button1 = new JButton("Send Patients Report");
+        JButton button1 = new JButton("Send Report");
         button1.setBounds(400,200,150,30);
         frame.add(button1);
         button1.addActionListener(l -> {
             try{
-                Class.forName("com.mysql.jdbc.Driver");
+                // Class.forName("com.mysql.jdbc.Driver");
                 // Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
                 // Statement stmt = con.createStatement();
                 // ResultSet rs = stmt.executeQuery("select * from patient");
@@ -107,5 +107,9 @@ public class LabTechnician {
             }
         });
 
+    }
+
+    public static void main(String[] args) {
+        new LabTechnician();
     }
 }
